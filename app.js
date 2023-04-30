@@ -21,9 +21,12 @@ while(computerWins < 5 && userWins < 5) {
         alert(`You lost, ${item(computerChoice)} beats ${item(choice)}`);
         computerWins++;
     }
-    else {
+    else if((computerChoice == 1 && choice == 2) || (computerChoice == 2 && choice == 3) || (computerChoice == 3 && choice == 1)) {
         alert(`You won, ${item(choice)} beats ${item(computerChoice)}`);
         userWins++;
+    }
+    else {
+        break;
     }
 }
 
