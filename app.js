@@ -30,6 +30,6 @@ while(computerWins < 5 && userWins < 5) {
 if(computerWins == 5) {
     alert("Computer won!");
 }
-else {
+else if(userWins == 5) {
     alert("You won!");
 }
